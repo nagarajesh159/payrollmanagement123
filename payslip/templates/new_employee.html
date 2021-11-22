@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    Name: <input type="text" name="name"><br>
+    Employee Id: <input type="text" name="employeeId"><br>
+    Date: <input type="date" name="date"><br>
+    <input type="submit" value="save">
+</form>
+</body>
+</html>

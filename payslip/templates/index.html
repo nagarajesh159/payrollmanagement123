@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: Lightgreen;
+        }
+    </style>
+</head>
+<body>
+<a href="{% url 'new' %}"> Add New Employee</a>
+<h1>List of employees</h1>
+
+<table>
+    <tr>
+        <th>Employee Id</th>
+        <th>Name</th>
+    </tr>
+    {% for employee in emp_list %}
+    <tr>
+        <td><a href="">{{employee.employeeId}}</a></td>
+        <td>{{employee.name}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <br><br><br>
+<a href="{% url 'new' %}"> Add New Employee</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>payroll</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    working_days: <input type="number" name="working_days"><br>
+    basic_salary: <input type="number" name="basic_salary"><br>
+    HRA: <input type="number" name="HRA"><br>
+    allowance: <input type="number" name="allowance"><br>
+    Incentives: <input type="number" name="Incentives"><br>
+    gift_voucher: <input type="number" name="gift_voucher"><br>
+    medical: <input type="number" name="medical"><br>
+    internet: <input type="number" name="internet"><br>
+    professional_tax: <input type="number" name="professional_tax"><br>
+    TDS: <input type="number" name="TDS"><br>
+    PF: <input type="number" name="PF"><br>
+    month: <input type="text" name="month"><br><br>
+    <input type="submit" name="add-payroll">
+</form>
+</body>
+</html>
